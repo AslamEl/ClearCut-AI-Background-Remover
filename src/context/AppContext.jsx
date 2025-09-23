@@ -23,7 +23,7 @@ export const AppContextProvider = ( props ) => {
         try{
 
             const token= await getToken();
-           const response= await axios.get(backendUrl+"/users/credits",{headers:{"Authorization":`Bearer ${token}`}});
+           const response= await axios.get(backendUrl+"/api/users/credits",{headers:{"Authorization":`Bearer ${token}`}});
 
            if(response.data.success){
             setCredit(response.data.data.credits);
@@ -60,7 +60,7 @@ export const AppContextProvider = ( props ) => {
 
             selectedImage && formData.append("file",selectedImage);
 
-            const {data: base64Image}= await axios.post(backendUrl +"/images/remove-background",formData,{headers:{Authorization:`Bearer ${token}`,"Content-Type":"form-data"}});
+            const {data: base64Image}= await axios.post(backendUrl+"/api/images/remove-background",formData,{headers:{Authorization:`Bearer ${token}`,"Content-Type":"form-data"}});
             setResultImage(`data:image/png; base64, ${base64Image}`);
             setCredit(credit-1);
 

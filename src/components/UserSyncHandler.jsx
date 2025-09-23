@@ -6,6 +6,7 @@ import { useAuth, useUser } from '@clerk/clerk-react';
 
 const UserSyncHandler = () => {
 
+    
     const {isLoaded, isSignedIn, getToken} = useAuth();
     const {user} = useUser();
     const [synced, setSynced] = useState(false);
@@ -26,10 +27,11 @@ const UserSyncHandler = () => {
                     email: user.primaryEmailAddress?.emailAddress,
                     firstName: user.firstName,
                     lastName: user.lastName,
-                    photoUrl:user.imageUrl
+                    photoUrl:user.imageUrl,
+                    userName: user.username
                 };
 
-               await axios.post(backendUrl+"/users", userData, {headers: {"Authorization": `Bearer ${token}`}});
+               await axios.post(backendUrl+"/api/users", userData, {headers: {"Authorization": `Bearer ${token}`}});
 
                
                setSynced(true);
