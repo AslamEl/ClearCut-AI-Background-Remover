@@ -1,12 +1,30 @@
-# React + Vite
+# 🖼️ ClearCut Background Remova – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend application** for the **AI Background Removal Application**, built with **React + Vite** and deployed on **Netlify**.  
+It allows users to upload images and remove their background instantly by communicating with the backend API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+🔗 **Deployed Site:** [https://clecut.netlify.app](https://clecut.netlify.app)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ **React** – UI library  
+- ⚡ **Vite** – Build tool & dev server  
+- 🔑 **Clerk** – Authentication & user management  
+- 🎨 **TailwindCSS** – Styling  
+- 🤖 **ClipDrop API** – AI-powered background removal  
+- 🌍 **Netlify** – Hosting & deployment  
+
+---
+
+## 🗄️ Backend
+
+The backend for this project is located in a separate repository:  
+[Backend Repository](https://github.com/AslamEl/ClearCut-AI-Background-Remover-backend.git)
+
+
