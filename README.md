@@ -1,4 +1,4 @@
-# 🖼️ ClearCut Background Remova – Frontend
+# 🖼️ ClearCut Background Removal – Frontend
 
 This is the **frontend application** for the **AI Background Removal Application**, built with **React + Vite** and deployed on **Netlify**.  
 It allows users to upload images and remove their background instantly by communicating with the backend API.
